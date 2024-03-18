@@ -43,7 +43,7 @@ contract Deployer_M1 is Script, Test {
         string tokenSymbol;
     }
 
-    string public deployConfigPath = string(bytes("script/M1_deploy.config.json"));
+    string public deployConfigPath = string(bytes("script/M1_deploy_sepolia.config.json"));
 
     // EigenLayer Contracts
     ProxyAdmin public eigenLayerProxyAdmin;

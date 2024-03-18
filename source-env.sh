@@ -22,12 +22,17 @@ case $1 in
         EXECUTOR_MULTISIG=$(yq e '.goerli.EXECUTOR_MULTISIG' $CONFIG_FILE)
         FOUNDRY_FUZZ_RUNS=$(yq e '.goerli.FOUNDRY_FUZZ_RUNS' $CONFIG_FILE)
         ;;
+    sepolia)
+            CHAIN_ID=$(yq e '.sepolia.CHAIN_ID' $CONFIG_FILE)
+            EXECUTOR_MULTISIG=$(yq e '.sepolia.EXECUTOR_MULTISIG' $CONFIG_FILE)
+            FOUNDRY_FUZZ_RUNS=$(yq e '.sepolia.FOUNDRY_FUZZ_RUNS' $CONFIG_FILE)
+            ;;
     local)
         CHAIN_ID=$(yq e '.local.CHAIN_ID' $CONFIG_FILE)
         FOUNDRY_FUZZ_RUNS=$(yq e '.local.FOUNDRY_FUZZ_RUNS' $CONFIG_FILE)
         ;;
     *)
-        echo "Invalid argument. Usage: $0 [goerli|local]"
+        echo "Invalid argument. Usage: $0 [goerli|sepolia|local]"
         return 1
         ;;
 esac
