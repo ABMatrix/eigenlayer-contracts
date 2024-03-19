@@ -14,7 +14,8 @@ contract Deployer_M2 is ExistingDeploymentParser {
     Vm cheats = Vm(HEVM_ADDRESS);
 
     // string public existingDeploymentInfoPath  = string(bytes("script/output/M1_deployment_goerli_2023_3_23.json"));
-    string public existingDeploymentInfoPath  = string(bytes("script/output/M1_MOCK_deployment_data.json"));
+//    string public existingDeploymentInfoPath  = string(bytes("script/output/M1_MOCK_deployment_data.json"));
+    string public existingDeploymentInfoPath  = string(bytes("script/output/M1_deployment_holesky_data.json"));
     string public deployConfigPath = string(bytes("script/M2_deploy.config.json"));
 
     BeaconChainOracle public beaconChainOracle;

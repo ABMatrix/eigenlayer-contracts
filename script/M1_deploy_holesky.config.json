@@ -1,0 +1,54 @@
+{
+     "multisig_addresses": {
+          "communityMultisig": "",
+          "operationsMultisig": "0xc309507A5508c5E91d1A5e04614D723851BCb571",
+          "pauserMultisig": "0xc309507A5508c5E91d1A5e04614D723851BCb571",
+          "executorMultisig": "0xc309507A5508c5E91d1A5e04614D723851BCb571",
+          "timelock": ""
+     },
+     "strategies": [
+                    {
+                         "token_address": "0x3F1c547b21f65e10480dE3ad8E19fAAC46C95034",
+                         "token_name": "Liquid staked Ether 2.0",
+                         "token_symbol": "stETH",
+                         "max_per_deposit": 0,
+                         "max_deposits": 0
+                    },
+                    {
+                         "token_address": "0x7322c24752f79c05ffd1e2a6fcb97020c1c264f1",
+                         "token_name": "Rocket Pool ETH",
+                         "token_symbol": "rETH",
+                         "max_per_deposit": 0,
+                         "max_deposits": 0
+                    }
+               ],
+     "strategyManager":
+          {
+               "init_paused_status": 0,
+               "init_withdrawal_delay_blocks": 10
+          },
+     "eigenPod":
+          {
+               "PARTIAL_WITHDRAWAL_FRAUD_PROOF_PERIOD_BLOCKS": 10,
+               "REQUIRED_BALANCE_WEI": "31000000000000000000"
+          },
+     "eigenPodManager":
+          {    
+               "max_pods": 0,
+               "init_paused_status": 30
+          },
+     "delayedWithdrawalRouter":
+          {
+               "init_paused_status": 0,
+               "init_withdrawal_delay_blocks": 10
+          },
+     "slasher":
+          {
+               "init_paused_status": "115792089237316195423570985008687907853269984665640564039457584007913129639935"
+          },
+     "delegation":
+          {
+               "init_paused_status": "115792089237316195423570985008687907853269984665640564039457584007913129639935"
+          },
+     "ethPOSDepositAddress": "0x00000000219ab540356cBB839Cbe05303d7705Fa"
+ }

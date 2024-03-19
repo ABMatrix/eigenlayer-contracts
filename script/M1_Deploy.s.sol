@@ -44,7 +44,7 @@ contract Deployer_M1 is Script, Test {
         string tokenSymbol;
     }
 
-    string public deployConfigPath = string(bytes("script/M1_deploy.config.json"));
+    string public deployConfigPath = string(bytes("script/M1_deploy_holesky.config.json"));
 
     // EigenLayer Contracts
     ProxyAdmin public eigenLayerProxyAdmin;
@@ -324,7 +324,7 @@ contract Deployer_M1 is Script, Test {
         vm.serializeString(parent_object, deployed_addresses, deployed_addresses_output);
         vm.serializeString(parent_object, chain_info, chain_info_output);
         string memory finalJson = vm.serializeString(parent_object, parameters, parameters_output);
-        vm.writeJson(finalJson, "script/output/M1_deployment_data.json");
+        vm.writeJson(finalJson, "script/output/M1_deployment_holesky_data.json");
     }
 
     function _verifyContractsPointAtOneAnother(
