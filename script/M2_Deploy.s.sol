@@ -23,7 +23,6 @@ contract Deployer_M2 is ExistingDeploymentParser {
     function run() external {
         // get info on all the already-deployed contracts
         _parseDeployedContracts(existingDeploymentInfoPath);
-
         // read and log the chainID
         uint256 currentChainId = block.chainid;
         emit log_named_uint("You are deploying on ChainID", currentChainId);
@@ -66,7 +65,7 @@ contract Deployer_M2 is ExistingDeploymentParser {
         // serialize all the data
         vm.serializeString(parent_object, deployed_addresses, deployed_addresses_output);
         string memory finalJson = vm.serializeString(parent_object, chain_info, chain_info_output);
-        vm.writeJson(finalJson, "script/output/M2_deployment_data.json");
+        vm.writeJson(finalJson, "script/output/M2_deployment_holesky_data.json");
     }
 }
 

@@ -23,10 +23,10 @@ case $1 in
         FOUNDRY_FUZZ_RUNS=$(yq e '.goerli.FOUNDRY_FUZZ_RUNS' $CONFIG_FILE)
         ;;
     holesky)
-            CHAIN_ID=$(yq e '.holesky.CHAIN_ID' $CONFIG_FILE)
-            EXECUTOR_MULTISIG=$(yq e '.holesky.EXECUTOR_MULTISIG' $CONFIG_FILE)
-            FOUNDRY_FUZZ_RUNS=$(yq e '.holesky.FOUNDRY_FUZZ_RUNS' $CONFIG_FILE)
-            ;;
+          CHAIN_ID=$(yq e '.holesky.CHAIN_ID' $CONFIG_FILE)
+          EXECUTOR_MULTISIG=$(yq e '.holesky.EXECUTOR_MULTISIG' $CONFIG_FILE)
+          FOUNDRY_FUZZ_RUNS=$(yq e '.holesky.FOUNDRY_FUZZ_RUNS' $CONFIG_FILE)
+          ;;
     local)
         CHAIN_ID=$(yq e '.local.CHAIN_ID' $CONFIG_FILE)
         FOUNDRY_FUZZ_RUNS=$(yq e '.local.FOUNDRY_FUZZ_RUNS' $CONFIG_FILE)

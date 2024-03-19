@@ -1,11 +1,11 @@
 {
   "chainInfo": {
-    "chainId": 31337
+    "chainId": 17000
   },
   "oracleInitialization": {
     "signers": [
       "0xc309507A5508c5E91d1A5e04614D723851BCb571"
     ],
-    "threshold": "2"
+    "threshold": "1"
  }
 }
