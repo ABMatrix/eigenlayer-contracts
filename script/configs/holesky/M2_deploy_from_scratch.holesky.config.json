@@ -37,7 +37,7 @@
   },
   "delegationManager": {
     "init_paused_status": 0,
-    "init_minWithdrawalDelayBlocks": 50400
+    "init_minWithdrawalDelayBlocks": 10
   },
   "avsDirectory": {
     "init_paused_status": 0
@@ -46,7 +46,7 @@
     "init_paused_status": 0
   },
   "eigenPod": {
-    "MAX_RESTAKED_BALANCE_GWEI_PER_VALIDATOR": 32000000000000000000,
+    "MAX_RESTAKED_BALANCE_GWEI_PER_VALIDATOR": 3000000000000000000,
     "GENESIS_TIME": 1695902400
   },
   "eigenPodManager": {
@@ -55,7 +55,7 @@
   },
   "delayedWithdrawalRouter": {
     "init_paused_status": 0,
-    "init_withdrawalDelayBlocks": 50400
+    "init_withdrawalDelayBlocks": 10
   },
   "ethPOSDepositAddress": "0x4242424242424242424242424242424242424242",
   "beaconOracleAddress": "0x4C116BB629bff7A8373c2378bBd919f8349B8f25"
