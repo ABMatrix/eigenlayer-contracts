@@ -3,10 +3,10 @@
     "chainId": 17000
   },
   "multisig_addresses": {
-    "pauserMultisig": "0x53410249ec7d3a3F9F1ba3912D50D6A3Df6d10A7",
-    "communityMultisig": "0xCb8d2f9e55Bc7B1FA9d089f9aC80C583D2BDD5F7",
-    "operationsMultisig": "0xfaEF7338b7490b9E272d80A1a39f4657cAf2b97d",
-    "executorMultisig": "0x28Ade60640fdBDb2609D8d8734D1b5cBeFc0C348",
+    "pauserMultisig": "0x9A501b86263c252b85a5fA93a8d4C19dCF7A3D41",
+    "communityMultisig": "0x9A501b86263c252b85a5fA93a8d4C19dCF7A3D41",
+    "operationsMultisig": "0x9A501b86263c252b85a5fA93a8d4C19dCF7A3D41",
+    "executorMultisig": "0x9A501b86263c252b85a5fA93a8d4C19dCF7A3D41",
     "timelock": "0xcF19CE0561052a7A7Ff21156730285997B350A7D"
   },
   "strategies": {
@@ -32,7 +32,7 @@
     ]
   },
   "strategyManager": {
-    "init_strategy_whitelister": "0xfaEF7338b7490b9E272d80A1a39f4657cAf2b97d",
+    "init_strategy_whitelister": "0x9A501b86263c252b85a5fA93a8d4C19dCF7A3D41",
     "init_paused_status": 0
   },
   "delegationManager": {
