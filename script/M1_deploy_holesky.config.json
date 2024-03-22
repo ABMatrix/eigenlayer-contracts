@@ -4,7 +4,7 @@
           "operationsMultisig": "0xc309507A5508c5E91d1A5e04614D723851BCb571",
           "pauserMultisig": "0xc309507A5508c5E91d1A5e04614D723851BCb571",
           "executorMultisig": "0xc309507A5508c5E91d1A5e04614D723851BCb571",
-          "timelock": ""
+          "timelock": "0xcF19CE0561052a7A7Ff21156730285997B350A7D"
      },
      "strategies": [
                     {
